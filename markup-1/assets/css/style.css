@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700');
+
+@font-face {
+font-family: "YesevaOneRegular";
+src: url("../fonts/YesevaOneRegular/YesevaOneRegular.eot");
+src: url("../fonts/YesevaOneRegular/YesevaOneRegular.eot?#iefix")format("embedded-opentype"),
+url("../fonts/YesevaOneRegular/YesevaOneRegular.woff") format("woff"),
+url("../fonts/YesevaOneRegular/YesevaOneRegular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('../fonts/MyriadPro/MyriadPro-Regular.eot');
+src: url('../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+url('../fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Lato Regular';
+src: url('../fonts/Lato/Lato-Regular.eot');
+src: url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans Regular';
+src: url('../fonts/OpenSans/OpenSans-Regular.eot');
+src: url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans Bold';
+src: url('../fonts/OpenSans/OpenSans-Bold.eot');
+src: url('../fonts/OpenSans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff'),
+url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans Italic';
+src: url('../fonts/OpenSans/OpenSans-Italic.eot');
+src: url('../fonts/OpenSans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/OpenSans/OpenSans-Italic.woff') format('woff'),
+url('../fonts/OpenSans/OpenSans-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+html,
+body {
+  height:100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: #000000;
+  color: #ffffff;
+}
+
+ul, figure {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+margin: 0;
+padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  width:1600px;
+  min-height: 100%;
+  margin: 0 auto; /*  */
+  padding-bottom:320px;
+  box-sizing: border-box;
+  background-color: #000000;
+  background: url("../images/promo-bg.jpg") no-repeat, url("../images/pattern.png");
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ============ Section - Header ============== */
+
+.header {
+  width: 100%;
+  height: 159px;
+  background: url("../images/header-bg.png") repeat-x;
+}
+
+.logo {
+  position: absolute;
+  top: 47px;
+  left: 179px;
+  width: 156px;
+  height: 26px;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  left: 551px;
+  height: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: "Gentium Book Basic";
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 11px;
+}
+
+nav ul li:last-child {
+  padding-right: 0;
+}
+
+nav ul li:nth-child(2) {
+  padding: 0 14px 0 12px;
+}
+
+
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 49px 11px 20px;
+}
+
+nav ul li a:hover {
+  background: url("../images/active-state.png") repeat-x rgba(255, 255, 255, 0.3);
+}
+
+.active {
+  background: url("../images/active-state.png") repeat-x;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50px;
+  left: 1304px;
+  background: url("../images/social-icons.png") no-repeat;
+}
+
+
+.social-icons a:nth-child(2) {
+  margin: 0 5px 0 7px;
+}
+
+
+/* ============ Section - Promo ============== */
+
+.promo {
+  height: 591px;
+  overflow: hidden;
+  text-align:center;
+}
+
+.callout-text {
+  margin: 56px auto 0px;
+  font-family: YesevaOneRegular, cursive;
+  font-size: 90px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.92;
+  line-height: 118px;
+  text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.64);
+}
+
+.promo-decoration {
+  width: 240px;
+  height: 49px;
+  margin: 20px 0 0 682px;
+  background: url("../images/promo-decoration.png") no-repeat;
+}
+
+.buttons {
+  margin: 21px 0 0 537px;
+  width: 524px;
+}
+
+.tobook,
+.tomenu {
+  box-sizing: border-box;
+  width: 228px;
+  height: 57px;
+  text-transform:uppercase;
+  color: #ffffff;
+  margin: 10px 13px;
+  text-decoration: none;
+  line-height:61px; /* Lato 57px */
+  font-family: 'Lato Regular', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+a.tobook {
+  display: inline-block;
+background-color: rgba(0, 0, 0, 0.63);
+border: 1px solid #000000;
+}
+a.tobook:hover {
+background-color: rgba(77, 77, 77, 0.4);
+border: 1px solid #ffffff;
+}
+a.tomenu {
+  display: inline-block;
+background-color: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.6);
+}
+a.tomenu:hover {
+background-color: rgba(240, 240, 240, 0.1);
+border: 1px solid #ffffff;
+}
+
+
+/* ============ Section - About ============== */
+.about {
+  background: url("../images/pattern.png"), url("../images/about-bg.png") no-repeat;
+  height: 710px;
+  overflow: hidden;
+  text-align:center;
+}
+
+.about-text{
+  float: left;
+  width: 428px;
+  height: 600px;
+  margin: 64px 0 0 285px;
+  text-align: center;
+  overflow:hidden;
+}
+
+.about .heading {
+  font-family: "YesevaOneRegular", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #cc9900;
+  text-align: center;
+  margin: 35px 0 16px 0px;
+}
+
+h3.heading::after {
+  display: block;
+  content: url("../images/divider.png");
+  margin: 1px 0 0 -1px;
+}
+
+.about div.text {
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  color: #4c4c4c;
+}
+
+.about-text img {
+  margin: 47px 0 0 70px;
+}
+
+.about-image {
+  float: left;
+  margin: 55px 0 0 26px;
+}
+
+
+/* ============ Section - Ingredients ============== */
+.ingredients {
+  background: url("../images/ingredients-bg.jpg");
+  height: 758px;
+  overflow: hidden;
+  text-align:center;
+}
+
+.ingredients figure {
+  width: 570px;
+  height: 557px;
+  margin: 100px 0 0 815px;
+   background: url("../images/ingredients-text-bg.png");
+/*background-color: rgba(10, 9, 7, 0.6);  */
+}
+
+.ingredients .heading {
+  font-family: "YesevaOneRegular", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 13px 0;
+  padding: 75px 0 0 0;
+}
+.ingredients h3.heading::after {
+  display: block;
+  content: url("../images/divider-white.png");
+  margin: 2px 0 0 1px;
+}
+
+.ingredients div.text {
+  width: 430px;
+  height: 147px;
+  margin: 0 auto;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.26px;
+  text-align: center;
+  overflow:hidden;
+}
+
+.ingreds {
+margin: 40px 0px;
+}
+
+.ingred-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.ingred-wrap {
+  display:inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0px 15px;
+  border-radius: 50%;
+  border: 5px solid rgba(152, 152, 152, 0.2);
+}
+
+.ingred1 {
+  background: url("../images/ingred1.jpg") no-repeat -50px -36px;
+}
+.ingred2 {
+  background: url("../images/ingred2.jpg") no-repeat -47px -94px;
+}
+.ingred3 {
+  background: url("../images/ingred3.jpg") no-repeat -48px -21px;
+}
+
+
+/* ============ Section - Menu ============== */
+.menu {
+min-height: 994px;
+background-color: #ffffff; 
+}
+
+
+
+/* ============ Section - reviews ============== */
+.reviews {
+  height: 758px;
+  background: url("../images/reviews-bg.jpg") no-repeat;
+  overflow:hidden;
+}
+
+section.reviews div {
+  width: 770px;
+  height: 557px;
+  overflow:hidden;
+}
+
+blockquote {
+  background: url("../images/quotes.png") no-repeat;
+}
+cite {
+  font-style: normal;
+}
+
+/* ============ Section - Reservations ============== */
+.reservations {
+  height: 710px;
+  background-color: #ffffff; 
+  overflow:hidden;
+}
+
+
+/* ============ footer ============== */
+
+footer {
+  position: absolute;
+  width:1600px;
+  height:320px;
+  bottom:0;
+  margin: 0 auto;
+  background-color: #191919;
+  display:block;
+  color: #ffffff;
+}
+
+footer > div {
+  width:1100px;
+  margin: 0 auto;
+}
+
+footer .column-1,
+footer .column-2,
+footer .column-3 {
+  float: left;
+  text-align: center;
+}
+
+footer .column-1 .heading,
+footer .column-2 .heading,
+footer .column-3 .heading {
+  color: #fefefe;
+  font-family: "YesevaOneRegular", cursive;
+  font-size: 21px;
+}
+
+footer h3.heading::after {
+  display: block;
+  content: url("../images/divider-white.png");
+  margin: 0 0 0 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+footer .column-1 {
+  width: 343px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer .column-2 {
+  width: 343px;
+}
+footer .column-3 {
+  width: 343px;
+}
+
+address {
+  font-style: normal;
+}
+
