@@ -5,6 +5,7 @@ const tipHeader = document.querySelector('#tip-header');
 const tipContent = document.querySelector('#tip-content');
 const prev = document.querySelector('#prev');
 const next = document.querySelector('#next');
+const bulletsContainer = document.querySelector('#bullets-container');
 let counter = 0;
 
 let notifs = [
@@ -16,11 +17,6 @@ let notifs = [
   '5 Excepteur sint occaecat cupidatat non proident, sunt in culpa',
   '6 qui officia deserunt mollit anim id est laborum. qui officia deserunt mollit anim id est laborum.',
   '7 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  '8 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip qui officia deserunt mollit anim id est laborum. qui officia deserunt mollit anim id est laborum.',
-  '9 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
-  '10 velit esse cillum dolore eu fugiat nulla pariatur. qui officia deserunt mollit anim id est laborum.',
-  '11 Excepteur sint occaecat cupidatat non proident, sunt in culpa',
-  '12 qui officia deserunt mollit anim id est laborum. qui officia deserunt mollit anim id est laborum.',
 ];
 
 
@@ -34,15 +30,20 @@ const showNotification = () => {
 }
 
 
-const renderItems = (index = 0) => {
+const renderBullets = (index) => {
+  bulletsContainer.innerHTML = notifs
+  .map((item, k) => `<div class="bullet${k === index ? ' -current' : ''}">&#8226;</div>`)
+  .join('\n');
+};
+
+const renderItems = (index) => {
   if (notifs[index]) {
-    let tiphead = notifs[index].slice(3, 25); //
-    tipHeader.innerHTML = tiphead; //
-//    console.log(tiphead); //
+    tipHeader.innerHTML = notifs[index].slice(3, 25);
     tipContent.innerHTML = notifs[index];
-    // add bullets!
+    renderBullets(counter);
   }
 };
+
 
 const toNext = () => {
   if (counter === notifs.length - 1) {
@@ -85,7 +86,7 @@ document.addEventListener('keyup', e => {
     toPrevious();
   }
 
-  if (e.keyCode === 39 && e.ctrlKey) { // to rigth
+  if (e.keyCode === 39 && e.ctrlKey) { // to right
     toNext();
   }
 });
@@ -104,7 +105,7 @@ const loadNotification = () => {
   if(localStorage.getItem('dismiss') === 'true' || notifs.length === 0) {
     hideNotification();
   } else {
-    setTimeout(showNotification, 2000); // 5000
+    setTimeout(showNotification, 5000);
     renderItems(counter);
   }
 };
