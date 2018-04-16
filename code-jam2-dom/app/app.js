@@ -1,4 +1,4 @@
-const notification = document.querySelector('#notification')
+const notification = document.querySelector('#notification');
 const close = document.querySelector('#close');
 const dismiss = document.querySelector('#dismiss');
 const tipHeader = document.querySelector('#tip-header');
