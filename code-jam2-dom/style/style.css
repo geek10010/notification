@@ -14,7 +14,7 @@
   z-index: 9999;
   box-sizing: border-box;
   width: 350px;
-  max-height: 290px;
+  height: 210px;
   padding: 10px;
   overflow: hidden;
   font-family: sans-serif;
@@ -53,7 +53,7 @@
 .tip-container {
   box-sizing: border-box;
   width: 295px;
-  max-height: 200px;
+  height: 140px;
   overflow: hidden;
   background-color: #ffffff;
   border: thin solid #000000;
