@@ -6,35 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style/style.css" rel="stylesheet">
   <script defer src="./app/app.js"></script>
-  <script defer src="./app/data.js"></script>
 </head>
 <body>
   <div class="wrapper">
-    <div id="notification" class="notification">
+    <div id="notification" class="notification -hidden">
       <div class="row1">
         <div id="tip-container" class="tip-container">
           <div id="tip-header" class="tip-header"></div>
           <div id="tip-content" class="tip-content">
           </div>
         </div>
-        <div id="close" class="close">&#215;</div>
+        <div id="close" class="close" title="Escape key to close">&#215;</div>
       </div>
       <div class="row2">
-        <div class="dismiss">
+        <div class="dismiss" title="Don't show next time">
           <input id="dismiss" type="checkbox"><label for="dismiss">Disable Tips</label>
         </div>
         <div id="controls" class="controls">
-          <div id="prev" class="prev">&#9665;</div>
+          <div id="prev" class="prev" title="Ctrl + ← key to previous">&#9665;</div>
           <div class="bullet">&#8226;</div>
           <div class="bullet">&#8226;</div>
           <div class="bullet -current">&#8226;</div>
           <div class="bullet">&#8226;</div>
           <div class="bullet">&#8226;</div>
-          <div id="next" class="next">&#9655;</div>
+          <div id="next" class="next" title="Ctrl + → key to next">&#9655;</div>
         </div>
       </div>
     </div>
     <h1>CodeJam-2-notification</h1>
+    <p><strong>Controls:</strong><br>
+    Escape key to close<br>
+    Ctrl + ← key to previous<br>
+    Ctrl + → key to next<br>
+    </p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
